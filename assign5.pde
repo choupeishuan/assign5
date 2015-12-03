@@ -13,6 +13,7 @@ boolean [] bulletNumLimit = new boolean[5];
 float [] bulletX = new float [5];
 float [] bulletY = new float [5];
 int bulletSpeed;
+int score=0;
 
 float backgroundX,backgroundY; //background
 float treasureX,treasureY; //treasure
@@ -196,7 +197,7 @@ void draw() {
   //score word
   textSize(32);
   fill(255);
-  text("Score:",5,height-15);
+  text("Score: "+ score ,5,height-15);
   
   //fighter
   image(fighterImg,fighterX,fighterY);
