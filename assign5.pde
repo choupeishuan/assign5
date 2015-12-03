@@ -132,6 +132,7 @@ void setup () {
 }
 
 void draw() {
+   
   
   if(playStart2){
    image(start2Img,0,0);
@@ -191,6 +192,11 @@ void draw() {
   backgroundX %=1281;
   backgroundY++;
   backgroundY %=1281;
+  
+  //score word
+  textSize(32);
+  fill(255);
+  text("Score:",5,height-15);
   
   //fighter
   image(fighterImg,fighterX,fighterY);
